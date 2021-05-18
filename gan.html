@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Erkin Polat - Flappy Bird</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico?" />
+	</head>
+	<body class="is-preload">
+		<div id="wrapper">
+
+			<div id="main">
+
+				<!-- Me -->
+					<article id="home" class="panel">
+						<header>
+							<h2>Building a GAN and a Conditional GAN with MNIST Data</h2>
+							
+							<p><a href="https://github.com/erkinpolat/Deep-Learning/blob/main/GAN_MNIST.ipynb" target="_blank">GitHub Link for the GAN</a></p>
+							<p><a href="https://github.com/erkinpolat/Deep-Learning/blob/main/Conditional_GAN_MNIST.ipynb" target="_blank">GitHub for the CGAN</a></p>
+
+							<p style="color: #808080">
+								GANs (Generative Adversarial Network) are a recent way of generating data using neural networks. A GAN usually consists of a generator network that produces data and a discriminator network that tries to identify whether a given data is real or fake. These two networks compete with each other in a zero sum game and over time both get more competent. In the ideal scenario generator improves to the point where the discriminator can make correct predictions only half of the time and a convergence is achieved where the generated data is very convincing. 
+								<br>
+								In this project I implemented a GAN using the Keras library. Sample outputs over epochs can be seen below:  
+							</p>
+							<br>
+							<div style="width:100%;height:0;padding-bottom:70%;position:relative;"><iframe src="https://giphy.com/embed/QbRLUc079eIuic2HJa" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+
+							<p>
+								After implementing the GAN, I made some tweaks to it to turn it into a Conditional GAN. The first model can generate digits however, we are not able to decide which digit is produced. The second model is trained with label embeddings so that the output can be controlled by the user. A sample output after a couple of epochs can be seen below:
+							</p>
+							<br>
+
+							<div class="container" style="max-width: 1200px; margin:auto; overflow: auto; display: flex; align-items: center; justify-content: center;">
+										<div class="gallery" style="margin:5px; border: 1px solid #ccc; float: left; width: 390px;">
+											<img style="width: 100%; height: auto; object-fit: cover;" src="images/CGAN.png" alt="">							
+											<div class="desc" style="padding: 15px; text-align: center;">Sample Outputs with Labels from the CGAN</div>
+										</div>
+							</div>
+							<br>
+
+							<h3>The skills I used for this project</h3>
+							<ul>
+								<li>Understanding of deep learning and GANs</li>
+								<li>Keras with TensorFlow</li>
+								<li>Parameter optimization in neural networks</li>
+								<li>Python Programming</li>
+							</ul>
+
+							
+						</header>
+						<pre><a href="index.html#work" class="icon solid fa-arrow-left"> Previous</a></pre>
+					</article>
+
+
+
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>	
+	</body>
+
+
+</html>
